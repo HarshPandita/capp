@@ -12,6 +12,8 @@ import jwt
 class RegisterView(GenericAPIView):
     serializer_class = UserSerializer
 
+
+    # hiw
     def post(self, request):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
